@@ -12,7 +12,7 @@ body {
   background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
 }
 
-.reset-button {
+/*.reset-button {
   font-size: 16px;
   height: 30px;
   line-height: 8px;
@@ -41,13 +41,12 @@ button {
   transition-timing-function: linear;
   margin-top: 0.6em;
 }
-
-header {
-  padding: 40px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
-  border-bottom:30px #879274;
+*/
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 55px;
 }
 
 main {
@@ -56,13 +55,13 @@ main {
   justify-content: space-around;
 }
 
-section {
+ /* section {
   flex: 0 auto;
   padding: 8px;
   margin-top: 50px;
   background-color: white;
   border-radius: 8px;
-}
+}*/
 
 .word-guess {
   width: 55vw;
@@ -74,7 +73,7 @@ section {
   height: 400px;
 }
 
-.card {
+/*.card {
   background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
   border: 1px solid #eceff1;
   border-radius: 8px;
@@ -82,32 +81,32 @@ section {
     rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
   margin: auto;
   padding: 20px;
-}
+}*/
 
 .word-blanks {
   line-height: 360px;
 }
 
-.large-font {
-  font-size: 3.5em;
+/* .large-font {
+font-size: 3.5em;
   text-align:center;
-}
+} */
 
 .timer {
-  height: 240px;
-  padding: 10px;
-  background: #13293d;
-  color: #fff;
-  text-align: center;
+  
+  background: #f0f0f0;
+  color: #000000;
+  
 }
 
 .timer-text {
   padding: 55px;
 }
 
-@media screen and (max-width: 1183px) {
+@media screen and (max-width: 393px) {
   main {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .word-guess,
@@ -122,7 +121,7 @@ section {
   }
 }
 
-@media screen and (max-width: 504px) {
+@media screen and (max-width: 392px) {
   .large-font {
     font-size: 2em;
   }
@@ -136,4 +135,10 @@ section {
   .timer {
     height: 200px;
   }
- 
+}
+
+#firstPageParagraph{
+  text-align: center;
+  width: 500px;
+}
+

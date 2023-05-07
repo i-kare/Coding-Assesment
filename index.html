@@ -7,12 +7,21 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class= "large-font">Word Guess Game</div>
-      <button class="start-button">Start</button>
+    <header class="main-header">
+      <h1><button class="viewHighScoresButton" id="viewHighScoresButton">View high scores</button></h1>
+      <h2>
+        <section class= "card timer"> 
+          <section class="large-font timer-count">Time:0</section>
+        </section>
+      </h2>
     </header>
 
     <main>
+      <section class="firstPage" id="firstPage">
+        <h1 id="codingQuizChallenge">Coding Quiz Challenge</h1>
+      <p id="firstPageParagraph">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+      <button class="start-button">Start</button></p></section>
+      
       <section>
         <div class="card word-guess">
           <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
@@ -28,11 +37,7 @@
         </div>
           <button class="reset-button">Reset Score</button>
       </div>
-          <div class= "card timer">
-            <div class = "timer-text">
-            <div class="large-font timer-count">10</div>
-            <h3>seconds remaining</h3>
-          </div>
+          
         
           </div>
         </div>
