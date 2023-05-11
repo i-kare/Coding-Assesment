@@ -31,6 +31,214 @@ $(function() {
   });
 });
 
+$(function() {
+ var count = 0;
+  var pointValue = 5;
+
+  $(".question-2-button").click((e) => {
+    e.preventDefault()
+    console.log(e.target.id)
+
+    if(e.target.id==="wrong"){
+      console.log("the answer was wrong")
+      $(".wrong").show();
+    } else if(e.target.id ==="right"){
+      console.log("the answer was correct")
+      count+= pointValue;
+      $(".right").show();
+    }
+
+    $("#question-3").show();
+    $("#question-2").hide();
+    console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+$(function() {
+  var count = 0;
+   var pointValue = 5;
+ 
+   $(".question-3-button").click((e) => {
+     e.preventDefault()
+     console.log(e.target.id)
+ 
+     if(e.target.id==="wrong"){
+       console.log("the answer was wrong")
+       $(".wrong").show();
+     } else if(e.target.id ==="right"){
+       console.log("the answer was correct")
+       count+= pointValue;
+       $(".right").show();
+     }
+ 
+     $("#question-4").show();
+     $("#question-3").hide();
+     console.log($(`#${e.target.id}`).text(), "t`he answer")
+   });
+ });
+
+ $(function() {
+   var count = 0;
+   var pointValue = 5;
+ 
+   $(".question-4-button").click((e) => {
+     e.preventDefault()
+     console.log(e.target.id)
+ 
+     if(e.target.id==="wrong"){
+       console.log("the answer was wrong")
+       $(".wrong").show();
+     } else if(e.target.id ==="right"){
+       console.log("the answer was correct")
+       count+= pointValue;
+       $(".right").show();
+     }
+ 
+     $("#question-5").show();
+     $("#question-4").hide();
+     console.log($(`#${e.target.id}`).text(), "t`he answer")
+   });
+ });
+
+$(function() {
+  var count = 0;
+  var pointValue = 5;
+ 
+  $(".question-5-button").click((e) => {
+    e.preventDefault()
+    console.log(e.target.id)
+ 
+    if(e.target.id==="wrong"){
+      console.log("the answer was wrong")
+      $(".wrong").show();
+    } else if(e.target.id ==="right"){
+     console.log("the answer was correct")
+      count+= pointValue;
+       $(".right").show();
+     }
+ 
+     $("#totalScorePage").show();
+    $("#question-5").hide();
+     console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+ $(function() {
+   //var count = 0;
+   //var pointValue = 5;
+ 
+  $(".submit-button").click((e) => {
+     e.preventDefault()
+     //console.log(e.target.id)
+ 
+    // if(e.target.id==="wrong"){
+       //console.log("the answer was wrong")
+       //$(".wrong").show();
+    // } else if(e.target.id ==="right"){
+       //console.log("the answer was correct")
+       //count+= pointValue;
+       //$(".right").show();
+    // }
+ 
+     $("#highScorePage").show();
+     $("#totalScorePage").hide();
+    //console.log($(`#${e.target.id}`).text(), "Your initials are saved")
+   });
+ });
+
+ $(function() {
+  //var count = 0;
+  //var pointValue = 5;
+ 
+  $(".goBack-button").click((e) => {
+    e.preventDefault()
+    //console.log(e.target.id)
+ 
+    //if(e.target.id==="wrong"){
+      //console.log("the answer was wrong")
+     // $(".wrong").show();
+   // } else if(e.target.id ==="right"){
+    // console.log("the answer was correct")
+      //count+= pointValue;
+      // $(".right").show();
+    // }
+ 
+     $("#firstPage").show();
+    $("#highScorePage").hide();
+     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+$(function() {
+  //var count = 0;
+  //var pointValue = 5;
+ 
+  $(".clearHighScores-button").click((e) => {
+    e.preventDefault()
+    //console.log(e.target.id)
+ 
+    //if(e.target.id==="wrong"){
+      //console.log("the answer was wrong")
+     // $(".wrong").show();
+   // } else if(e.target.id ==="right"){
+    // console.log("the answer was correct")
+      //count+= pointValue;
+      // $(".right").show();
+    // }
+ 
+     $(".highScorePagePart2").show();
+    $("#highScorePage").hide();
+     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+$(function() {
+  //var count = 0;
+  //var pointValue = 5;
+ 
+  $(".goBackPart2-button").click((e) => {
+    e.preventDefault()
+    //console.log(e.target.id)
+ 
+    //if(e.target.id==="wrong"){
+      //console.log("the answer was wrong")
+     // $(".wrong").show();
+   // } else if(e.target.id ==="right"){
+    // console.log("the answer was correct")
+      //count+= pointValue;
+      // $(".right").show();
+    // }
+ 
+     $("#firstPage").show();
+    $("#highScorePagePart2").hide();
+     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+$(function() {
+  //var count = 0;
+  //var pointValue = 5;
+ 
+  $(".viewHighScoresButton").click((e) => {
+    e.preventDefault()
+    //console.log(e.target.id)
+ 
+    //if(e.target.id==="wrong"){
+      //console.log("the answer was wrong")
+     // $(".wrong").show();
+   // } else if(e.target.id ==="right"){
+    // console.log("the answer was correct")
+      //count+= pointValue;
+      // $(".right").show();
+    // }
+ 
+     $("#highScorePagePart2").show();
+    $("#firstPage").hide();
+     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+  });
+});
+
+
 
 
 
