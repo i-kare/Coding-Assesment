@@ -3,6 +3,8 @@
 // e.innerHTML = 'firstPage DOM';
 
 $(function() {
+  var count = 0;
+  var pointValue = 5;
   $(".start-button").click((e) => {
     e.preventDefault()
     $(".firstPage").hide();
@@ -13,9 +15,32 @@ $(function() {
   $(".question-1-button").click((e) => {
     e.preventDefault()
     console.log(e.target.id)
+
+    if(e.target.id==="wrong"){
+      console.log("the answer was wrong")
+      $(".wrong").show();
+    } else if(e.target.id ==="right"){
+      console.log("the answer was correct")
+      count+= pointValue;
+      $(".right").show();
+    }
+
+    $("#question-2").show();
+    $("#question-1").hide();
     console.log($(`#${e.target.id}`).text(), "t`he answer")
   });
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 // var wordBlank = document.querySelector(".word-blanks");

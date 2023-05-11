@@ -30,53 +30,82 @@
     <section class="question" id="question-1" style="display: none;">
       <h1 class="title">Commonly used data types DO Not Include:</h1>
       <li class="answers">
-        <button class="question-1-button" id="question-answer-1">1.</button>
-        <button class="question-1-button" id="question-answer-2">2.</button>
-        <button class="question-1-button" id="question-answer-3">3.</button>
-        <button class="question-1-button" id="question-answer-4">4.</button>
+        <button class="question-1-button" id="wrong">1.strings</button>
+        <button class="question-1-button" id="right">2.booleans</button>
+        <button class="question-1-button" id="wrong">3.alerts</button>
+        <button class="question-1-button" id="wrong">4.numbers</button>
       </li>
     </section>
     <section class="question" id="question-2" style="display: none;">
       <h1 class="title">The condition in an if / else statement is enclosed with ________.</h1>
       <li class="answers">
-        <button >1.</button>
-        <button >2.</button>
-        <button >3.</button>
-        <button >4.</button>
+        <button >1.quotes</button>
+        <button >2.curly brackets</button>
+        <button >3.parenthesis</button>
+        <button >4.square brackets</button>
       </li>
+      <p class="wrong" style="display: none;">wrong</p>
+      <p class="right" style="display: none;">right</p>
     </section>
     <section class="question" id="question-3" style="display: none;">
       <h1 class="title">Arrays in JavaScript can be used to store ________.</h1>
       <li class="answers">
-        <button >1.</button>
-        <button >2.</button>
-        <button >3.</button>
-        <button >4.</button>
+        <button >1.numbers and strings</button>
+        <button >2.other arrays</button>
+        <button >3.booleans</button>
+        <button >4.all of the above</button>
       </li>
+      <p>wrong</p>
+      <p>right</p>
     </section>
     <section class="question" id="question-4" style="display: none;">
       <h1 class="title">Strings values must be enclosed within ________ when being assigned to variables.</h1>
       <li class="answers">
-        <button >1.</button>
-        <button >2.</button>
-        <button >3.</button>
-        <button >4.</button>
+        <button >1.commas</button>
+        <button >2.curly brackets</button>
+        <button >3.quotes</button>
+        <button >4.parenthesis</button>
       </li>
+      <p>wrong</p>
+      <p>right</p>
     </section>
     <section class="question" id="question-5" style="display: none;">
       <h1 class="title">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
       <li class="answers">
-        <button >1.</button>
-        <button >2.</button>
-        <button >3.</button>
-        <button >4.</button>
+        <button >1.JavaScript</button>
+        <button >2.terminal/bash</button>
+        <button >3.for loops</button>
+        <button >4.console.log</button>
       </li>
+      <p>wrong</p>
+      <p>right</p>
+    </section>
+
+    <section class="totalScorePage" id="totalScorePage" style="display:none;">
+      <h1 id="allDone">All done!</h1>
+      <h2 id="totalScore">Your final score is?</h2>
+      <h3 title="Enter inititals:">Enter inititals:
+      <input id="initialsInput" type="text" placeholder="A.B"></input> 
+      <button class="submit-button" id="submit-button">Submit</button></h3>
+      
+    </section>
+
+    <section class="highScorePage" id="totalscorePage" style="display:none;">
+      <h1 id="highScore">High scores</h1>
+      <h2 class="highScoreResults" id="highScoreResults">1. A.B 0</h2>
+      <h3 class="highScoreResults-children" id="highScoreResults-children">
+        <button class="goBack-button" id="goBack-button">Go Back</button>
+        <button class="clearHighScores-button" id="clearHighScores-button">Clear high scores</button>
+      </h3>
+      
     </section>
 
 
 
 
 
+
+<div style="display:none;"> 
     <section>
       <div class="card word-guess">
         <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
@@ -91,7 +120,7 @@
             <h2>Losses: <span class="lose">0</span></h2>
           </div>
           <button class="reset-button">Reset Score</button>
-        </div>
+        </div> </div>
 
 
 
