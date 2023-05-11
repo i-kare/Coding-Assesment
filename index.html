@@ -1,48 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS Box Styling</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <h1><button class="viewHighScoresButton" id="viewHighScoresButton">View high scores</button></h1>
-      <h2>
-        <section class= "card timer"> 
-          <section class="large-font timer-count">Time:0</section>
-        </section>
-      </h2>
-    </header>
 
-    <main>
-      <section class="firstPage" id="firstPage">
-        <h1 id="codingQuizChallenge">Coding Quiz Challenge</h1>
-      <p id="firstPageParagraph">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.
-       <button class="start-button" id="firstPage-children">Start</button></p></section>
-      
-    <!--   <section>
-        <div class="card word-guess">
-          <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
+<head>
+  <title>CSS Box Styling</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1><button class="viewHighScoresButton" id="viewHighScoresButton">View high scores</button></h1>
+    <h2>
+      <section class="card timer">
+        <section class="large-font timer-count">Time:0</section>
         </div>
       </section>
+    </h2>
+  </header>
 
-      <section>
-        <div class="card results">
-          <div class = "win-loss-container">
+  <main>
+    <section class="firstPage" id="firstPage">
+      <h1 id="codingQuizChallenge">Coding Quiz Challenge</h1>
+      <p id="firstPageParagraph">Try to answer the following code-related questions within the time limit. Keep in mind
+        that incorrect answers will penalize your score/time by ten seconds.
+        <button class="start-button" id="firstPage-children">Start Quiz</button>
+      </p>
+    </section>
+    <section class="question" id="question-1" style="display: none;">
+      <h1 class="title">Commonly used data types DO Not Include:</h1>
+      <li class="answers">
+        <button class="question-1-button" id="question-answer-1">1.</button>
+        <button class="question-1-button" id="question-answer-2">2.</button>
+        <button class="question-1-button" id="question-answer-3">3.</button>
+        <button class="question-1-button" id="question-answer-4">4.</button>
+      </li>
+    </section>
+    <section class="question" id="question-2" style="display: none;">
+      <h1 class="title">The condition in an if / else statement is enclosed with ________.</h1>
+      <li class="answers">
+        <button >1.</button>
+        <button >2.</button>
+        <button >3.</button>
+        <button >4.</button>
+      </li>
+    </section>
+    <section class="question" id="question-3" style="display: none;">
+      <h1 class="title">Arrays in JavaScript can be used to store ________.</h1>
+      <li class="answers">
+        <button >1.</button>
+        <button >2.</button>
+        <button >3.</button>
+        <button >4.</button>
+      </li>
+    </section>
+    <section class="question" id="question-4" style="display: none;">
+      <h1 class="title">Strings values must be enclosed within ________ when being assigned to variables.</h1>
+      <li class="answers">
+        <button >1.</button>
+        <button >2.</button>
+        <button >3.</button>
+        <button >4.</button>
+      </li>
+    </section>
+    <section class="question" id="question-5" style="display: none;">
+      <h1 class="title">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
+      <li class="answers">
+        <button >1.</button>
+        <button >2.</button>
+        <button >3.</button>
+        <button >4.</button>
+      </li>
+    </section>
+
+
+
+
+
+    <section>
+      <div class="card word-guess">
+        <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card results">
+        <div class="win-loss-container">
           <div>
-          <h2>Wins: <span class="win">0 </span> </h2>
-          <h2>Losses: <span class="lose">0</span></h2>
-        </div>
-          <button class="reset-button">Reset Score</button>
-      </div>-->
-          
-        
+            <h2>Wins: <span class="win">0 </span> </h2>
+            <h2>Losses: <span class="lose">0</span></h2>
           </div>
+          <button class="reset-button">Reset Score</button>
         </div>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+
+
+
+      </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
