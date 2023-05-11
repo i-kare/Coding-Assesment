@@ -21,16 +21,16 @@ $(function() {
 // var wordBlank = document.querySelector(".word-blanks");
 // var win = document.querySelector(".win");
 // var lose = document.querySelector(".lose");
-// var timerElement = document.querySelector(".timer-count");
-// var startButton = document.querySelector(".start-button");
+ var timerElement = document.querySelector(".timer-count");
+ var startButton = document.querySelector(".start-button");
 
 // var chosenWord = "";
 // var numBlanks = 0;
 // var winCounter = 0;
 // var loseCounter = 0;
-// var isWin = false;
-// var timer;
-// var timerCount;
+ var isWin = false;
+ var timer;
+ var timerCount;
 
 // // Arrays used to create blanks and letters on screen
 // var lettersInChosenWord = [];
@@ -46,53 +46,53 @@ $(function() {
 // }
 
 // // The startGame function is called when the start button is clicked
-// function startGame() {
+ function startGame() {
 //   isWin = false;
-//   timerCount = 75;
+  timerCount = 75;
 //   // Prevents start button from being clicked when round is in progress
-//   startButton.disabled = true;
-//   renderBlanks()
-//   startTimer()
-// }
+  startButton.disabled = true;
+   //renderBlanks()
+  startTimer()
+ }
 
 // // The winGame function is called when the win condition is met
-// function winGame() {
+//function winGame() {
 //   wordBlank.textContent = "YOU WON!!!🏆 ";
 //   winCounter++
-//   startButton.disabled = false;
+  // startButton.disabled = false;
 //   setWins()
 // }
 
 // // The loseGame function is called when timer reaches 0
-// function loseGame() {
-//   wordBlank.textContent = "GAME OVER";
-//   loseCounter++
-//   startButton.disabled = false;
-//   setLosses()
-// }
+ //function loseGame() {
+  // wordBlank.textContent = "GAME OVER";
+  // loseCounter++
+  //startButton.disabled = false;
+  // setLosses()
+ //}
 
 // // The setTimer function starts and stops the timer and triggers winGame() and loseGame()
-// function startTimer() {
+ function startTimer() {
 //   // Sets timer
-//   timer = setInterval(function() {
-//     timerCount--;
-//     timerElement.textContent = timerCount;
-//     if (timerCount >= 0) {
+ timer = setInterval(function() {
+   timerCount--;
+   timerElement.textContent = timerCount;
+   //if (timerCount >= 0) {
 //       // Tests if win condition is met
-//       if (isWin && timerCount > 0) {
+     if (isWin && timerCount > 0) {
 //         // Clears interval and stops timer
-//         clearInterval(timer);
-//         winGame();
-//       }
-//     }
+       clearInterval(timer);
+         //winGame();
+      }
+    //}
 //     // Tests if time has run out
-//     if (timerCount === 0) {
+    if (timerCount === 0) {
 //       // Clears interval
-//       clearInterval(timer);
-//       loseGame();
-//     }
-//   }, 1000);
-// }
+      clearInterval(timer);
+       //loseGame();
+    }
+   }, 1000);
+ }
 
 // // Creates blanks on screen
 // function renderBlanks() {
@@ -173,11 +173,11 @@ $(function() {
 // }
 
 // // Attach event listener to document to listen for key event
-// document.addEventListener("keydown", function(event) {
+ document.addEventListener("keydown", function(event) {
 //   // If the count is zero, exit function
-//   if (timerCount === 0) {
-//     return;
-//   }
+  if (timerCount === 0) {
+     return;
+   }
 //   // Convert all keys to lower case
 //   var key = event.key.toLowerCase();
 //   var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
@@ -186,11 +186,11 @@ $(function() {
 //     var letterGuessed = event.key;
 //     checkLetters(letterGuessed)
 //     checkWin();
-//   }
-// });
+   //}
+ });
 
 // // Attach event listener to start button to call startGame function on click
-// startButton.addEventListener("click", startGame);
+ startButton.addEventListener("click", startGame);
 
 // // Calls init() so that it fires when page opened
 // init();
