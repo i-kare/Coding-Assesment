@@ -2,9 +2,14 @@
 // const e = document.createElement('div');
 // e.innerHTML = 'firstPage DOM';
 
+
+
+
 $(function() {
   var count = 0;
   var pointValue = 5;
+ 
+
   $(".start-button").click((e) => {
     e.preventDefault()
     $(".firstPage").hide();
@@ -17,21 +22,26 @@ $(function() {
     console.log(e.target.id)
 
     if(e.target.id==="wrong"){
+      timerCount = timerCount - 15;
       console.log("the answer was wrong")
       $(".wrong").show();
+      console.log(count);
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
       count+= pointValue;
       $(".right").show();
+      console.log(count);
+      
     }
 
     $("#question-2").show();
     $("#question-1").hide();
-    console.log($(`#${e.target.id}`).text(), "t`he answer")
+    console.log($(`#${e.target.id}`).text(), "the answer")
   });
-});
 
-$(function() {
+
+
+
  var count = 0;
   var pointValue = 5;
 
@@ -40,21 +50,24 @@ $(function() {
     console.log(e.target.id)
 
     if(e.target.id==="wrong"){
+      timerCount = timerCount - 15;
       console.log("the answer was wrong")
       $(".wrong").show();
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
       count+= pointValue;
       $(".right").show();
+      console.log(count);
+   
     }
 
     $("#question-3").show();
     $("#question-2").hide();
-    console.log($(`#${e.target.id}`).text(), "t`he answer")
+    console.log($(`#${e.target.id}`).text(), "the answer")
   });
-});
 
-$(function() {
+
+
   var count = 0;
    var pointValue = 5;
  
@@ -63,21 +76,23 @@ $(function() {
      console.log(e.target.id)
  
      if(e.target.id==="wrong"){
-       console.log("the answer was wrong")
+      timerCount = timerCount - 15; 
+      console.log("the answer was wrong")
        $(".wrong").show();
      } else if(e.target.id ==="right"){
        console.log("the answer was correct")
        count+= pointValue;
        $(".right").show();
+       console.log(count);
      }
  
      $("#question-4").show();
      $("#question-3").hide();
-     console.log($(`#${e.target.id}`).text(), "t`he answer")
+     console.log($(`#${e.target.id}`).text(), "the answer")
    });
- });
+ 
 
- $(function() {
+ 
    var count = 0;
    var pointValue = 5;
  
@@ -86,42 +101,57 @@ $(function() {
      console.log(e.target.id)
  
      if(e.target.id==="wrong"){
-       console.log("the answer was wrong")
+      timerCount = timerCount - 15; 
+      console.log("the answer was wrong")
        $(".wrong").show();
      } else if(e.target.id ==="right"){
        console.log("the answer was correct")
        count+= pointValue;
        $(".right").show();
+       console.log(count);
      }
  
      $("#question-5").show();
      $("#question-4").hide();
-     console.log($(`#${e.target.id}`).text(), "t`he answer")
+     console.log($(`#${e.target.id}`).text(), "the answer")
    });
- });
+ 
 
-$(function() {
+
   var count = 0;
   var pointValue = 5;
  
   $(".question-5-button").click((e) => {
     e.preventDefault()
     console.log(e.target.id)
- 
+    
     if(e.target.id==="wrong"){
+      timerCount = timerCount - 15;
       console.log("the answer was wrong")
       $(".wrong").show();
     } else if(e.target.id ==="right"){
      console.log("the answer was correct")
       count+= pointValue;
        $(".right").show();
+       console.log(pointValue);
      }
- 
+     
      $("#totalScorePage").show();
     $("#question-5").hide();
-     console.log($(`#${e.target.id}`).text(), "t`he answer")
+     console.log($(`#${e.target.id}`).text(), "the answer")
   });
+
 });
+
+
+
+
+
+
+
+
+
+
 
  $(function() {
    //var count = 0;
@@ -142,6 +172,9 @@ $(function() {
  
      $("#highScorePage").show();
      $("#totalScorePage").hide();
+     startButton.disabled = false;
+    
+     
     //console.log($(`#${e.target.id}`).text(), "Your initials are saved")
    });
  });
@@ -165,7 +198,8 @@ $(function() {
  
      $("#firstPage").show();
     $("#highScorePage").hide();
-     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+    
+     //console.log($(`#${e.target.id}`).text(), "the answer")
   });
 });
 
@@ -188,7 +222,7 @@ $(function() {
  
      $(".highScorePagePart2").show();
     $("#highScorePage").hide();
-     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+     //console.log($(`#${e.target.id}`).text(), "the answer")
   });
 });
 
@@ -211,7 +245,7 @@ $(function() {
  
      $("#firstPage").show();
     $("#highScorePagePart2").hide();
-     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+     //console.log($(`#${e.target.id}`).text(), "the answer")
   });
 });
 
@@ -234,7 +268,7 @@ $(function() {
  
      $("#highScorePagePart2").show();
     $("#firstPage").hide();
-     //console.log($(`#${e.target.id}`).text(), "t`he answer")
+     //console.log($(`#${e.target.id}`).text(), "the answer")
   });
 });
 
@@ -251,19 +285,22 @@ $(function() {
 
 
 
+
 // var wordBlank = document.querySelector(".word-blanks");
-// var win = document.querySelector(".win");
+ var win = document.querySelector(".win");
 // var lose = document.querySelector(".lose");
  var timerElement = document.querySelector(".timer-count");
  var startButton = document.querySelector(".start-button");
 
 // var chosenWord = "";
 // var numBlanks = 0;
-// var winCounter = 0;
+var winCounter = 0;
 // var loseCounter = 0;
  var isWin = false;
  var timer;
  var timerCount;
+   
+ 
 
 // // Arrays used to create blanks and letters on screen
 // var lettersInChosenWord = [];
@@ -273,14 +310,14 @@ $(function() {
 // var words = ["variable","array", "modulus", "object", "function", "string", "boolean"];
 
 // // The init function is called when the page loads 
-// function init() {
-//   getWins();
+ function init() {
+   getWins();
 //   getlosses();
-// }
+ }
 
 // // The startGame function is called when the start button is clicked
  function startGame() {
-//   isWin = false;
+   isWin = false;
   timerCount = 75;
 //   // Prevents start button from being clicked when round is in progress
   startButton.disabled = true;
@@ -288,21 +325,28 @@ $(function() {
   startTimer()
  }
 
+ 
+
 // // The winGame function is called when the win condition is met
-//function winGame() {
+function winGame() {
 //   wordBlank.textContent = "YOU WON!!!🏆 ";
-//   winCounter++
-  // startButton.disabled = false;
-//   setWins()
-// }
+   winCounter++
+   startButton.disabled = false;
+   $("#totalScorePage").show();
+   setWins()
+ }
+
+ 
+
 
 // // The loseGame function is called when timer reaches 0
- //function loseGame() {
+$(function endGame() {
   // wordBlank.textContent = "GAME OVER";
-  // loseCounter++
-  //startButton.disabled = false;
+  startButton.disabled = false;
   // setLosses()
- //}
+ 
+})
+
 
 // // The setTimer function starts and stops the timer and triggers winGame() and loseGame()
  function startTimer() {
@@ -310,19 +354,29 @@ $(function() {
  timer = setInterval(function() {
    timerCount--;
    timerElement.textContent = timerCount;
-   //if (timerCount >= 0) {
+   if (timerCount >= 0) {
 //       // Tests if win condition is met
      if (isWin && timerCount > 0) {
 //         // Clears interval and stops timer
        clearInterval(timer);
-         //winGame();
+         winGame();
       }
-    //}
+    }
 //     // Tests if time has run out
-    if (timerCount === 0) {
-//       // Clears interval
+    if (timerCount <= 0) {$("#totalScorePage").show();
+//      
+// Clears interval
       clearInterval(timer);
-       //loseGame();
+      $("#firstPage").hide();
+      $("#question-1").hide();
+      $("#question-2").hide();
+      $("#question-3").hide();
+      $("#question-4").hide();
+      $("#question-5").hide();
+      $("#highScorePage").hide();
+      $("#highScorePagePart2").hide();
+      endGame();
+      
     }
    }, 1000);
  }
@@ -343,10 +397,10 @@ $(function() {
 // }
 
 // // Updates win count on screen and sets win count to client storage
-// function setWins() {
-//   win.textContent = winCounter;
-//   localStorage.setItem("winCount", winCounter);
-// }
+ function setWins() {
+   win.textContent = winCounter;
+   localStorage.setItem("winCount", winCounter);
+ }
 
 // // Updates lose count on screen and sets lose count to client storage
 // function setLosses() {
@@ -355,19 +409,19 @@ $(function() {
 // }
 
 // // These functions are used by init
-// function getWins() {
+ function getWins() {
 //   // Get stored value from client storage, if it exists
-//   var storedWins = localStorage.getItem("winCount");
+   var storedWins = localStorage.getItem("winCount");
 //   // If stored value doesn't exist, set counter to 0
-//   if (storedWins === null) {
-//     winCounter = 0;
-//   } else {
+   if (storedWins === null) {
+     winCounter = 0;
+   } else {
 //     // If a value is retrieved from client storage set the winCounter to that value
-//     winCounter = storedWins;
-//   }
+     winCounter = storedWins;
+   }
 //   //Render win count to page
-//   win.textContent = winCounter;
-// }
+   win.textContent = winCounter;
+ }
 
 // function getlosses() {
 //   var storedLosses = localStorage.getItem("loseCount");
@@ -379,13 +433,14 @@ $(function() {
 //   lose.textContent = loseCounter;
 // }
 
-// function checkWin() {
+ function checkWin() {
 //   // If the word equals the blankLetters array when converted to string, set isWin to true
-//   if (chosenWord === blanksLetters.join("")) {
+   if (timerCount === 0) {
 //     // This value is used in the timer function to test if win condition is met
-//     isWin = true;
-//   }
-// }
+     
+isWin = true;
+   }
+ }
 
 // // Tests if guessed letter is in word and renders it to the screen.
 // function checkLetters(letter) {
@@ -428,16 +483,22 @@ $(function() {
 // // Calls init() so that it fires when page opened
 // init();
 
+
+
+
+
+
 // // Bonus: Add reset button
-// var resetButton = document.querySelector(".reset-button");
+ var resetButton = document.querySelector(".goBack-button","goBackPart2");
 
 // function resetGame() {
 //   // Resets win and loss counts
-//   winCounter = 0;
+   
+//winCounter = 0;
 //   loseCounter = 0;
 //   // Renders win and loss counts and sets them into client storage
-//   setWins()
+   //setWins()
 //   setLosses()
-// }
+ //}
 // // Attaches event listener to button
-// resetButton.addEventListener("click", resetGame);
+ //resetButton.addEventListener("click", resetGame);

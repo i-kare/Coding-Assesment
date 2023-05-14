@@ -83,7 +83,7 @@
 
     <section class="totalScorePage" id="totalScorePage" style="display:none;">
       <h1 id="allDone">All done!</h1>
-      <h2 id="totalScore">Your final score is?</h2>
+      <h2 id="totalScore">Your final score is  <span class="score">0 </span></h2>
       <h3 title="Enter inititals:">Enter inititals:
       <input id="initialsInput" type="text" placeholder="A.B"></input> 
       <button class="submit-button" id="submit-button">Submit</button></h3>
@@ -91,7 +91,7 @@
 
     <section class="highScorePage" id="highScorePage" style="display:none;">
       <h1 id="highScore">High scores</h1>
-      <h2 class="highScoreResults" id="highScoreResults">1. AB - 0</h2>
+      <h2 class="highScoreResults" id="highScoreResults"><span class="highScoreLogged">1.AB - 0 </span></h2>
       <h3 class="highScoreResults-children" id="highScoreResults-children">
         <button class="goBack-button" id="goBack-button">Go Back</button>
         <button class="clearHighScores-button" id="clearHighScores-button">Clear high scores</button>
@@ -119,12 +119,14 @@
         <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
       </div>
     </section>
+    </div>
 
+    <div> 
     <section>
       <div class="card results">
         <div class="win-loss-container">
           <div>
-            <h2>Wins: <span class="win">0 </span> </h2>
+            <h2>Wins:  </h2>
             <h2>Losses: <span class="lose">0</span></h2>
           </div>
           <button class="reset-button">Reset Score</button>
