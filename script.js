@@ -25,11 +25,13 @@ $(function() {
       timerCount = timerCount - 15;
       console.log("the answer was wrong")
       $(".wrong").show();
+      $(".right").hide();
       console.log(count);
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
       count+= pointValue; 
       $(".right").show();
+      $(".wrong").hide();
       console.log(count);
       
     }
@@ -51,10 +53,12 @@ $(function() {
       timerCount = timerCount - 15;
       console.log("the answer was wrong")
       $(".wrong").show();
+      $(".right").hide();
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
       count+= pointValue;
       $(".right").show();
+      $(".wrong").hide();
       console.log(count);
    
     }
@@ -76,10 +80,12 @@ $(function() {
       timerCount = timerCount - 15; 
       console.log("the answer was wrong")
        $(".wrong").show();
+       $(".right").hide();
      } else if(e.target.id ==="right"){
        console.log("the answer was correct")
        count+= pointValue;
        $(".right").show();
+       $(".wrong").hide();
        console.log(count);
      }
  
@@ -100,10 +106,12 @@ $(function() {
       timerCount = timerCount - 15; 
       console.log("the answer was wrong")
        $(".wrong").show();
+       $(".right").hide();
      } else if(e.target.id ==="right"){
        console.log("the answer was correct")
        count+= pointValue;
        $(".right").show();
+       $(".wrong").hide();
        console.log(count);
      }
  
@@ -124,10 +132,12 @@ $(function() {
      timerCount = timerCount - 15; 
      console.log("the answer was wrong")
       $(".wrong").show();
+      $(".right").hide();
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
       count+= pointValue;
       $(".right").show();
+      $(".wrong").hide();
       console.log(count);
     }
 
