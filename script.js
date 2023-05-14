@@ -28,7 +28,7 @@ $(function() {
       console.log(count);
     } else if(e.target.id ==="right"){
       console.log("the answer was correct")
-      count+= pointValue;
+      count+= pointValue; 
       $(".right").show();
       console.log(count);
       
@@ -42,8 +42,6 @@ $(function() {
 
 
 
- var count = 0;
-  var pointValue = 5;
 
   $(".question-2-button").click((e) => {
     e.preventDefault()
@@ -68,8 +66,7 @@ $(function() {
 
 
 
-  var count = 0;
-   var pointValue = 5;
+ 
  
    $(".question-3-button").click((e) => {
      e.preventDefault()
@@ -93,8 +90,7 @@ $(function() {
  
 
  
-   var count = 0;
-   var pointValue = 5;
+ 
  
    $(".question-4-button").click((e) => {
      e.preventDefault()
@@ -118,28 +114,34 @@ $(function() {
  
 
 
-  var count = 0;
-  var pointValue = 5;
+  
  
   $(".question-5-button").click((e) => {
     e.preventDefault()
     console.log(e.target.id)
-    
+
     if(e.target.id==="wrong"){
-      timerCount = timerCount - 15;
-      console.log("the answer was wrong")
+     timerCount = timerCount - 15; 
+     console.log("the answer was wrong")
       $(".wrong").show();
     } else if(e.target.id ==="right"){
-     console.log("the answer was correct")
+      console.log("the answer was correct")
       count+= pointValue;
-       $(".right").show();
-       console.log(pointValue);
-     }
+      $(".right").show();
+      console.log(count);
+    }
+
      
      $("#totalScorePage").show();
     $("#question-5").hide();
+    
+   
+
      console.log($(`#${e.target.id}`).text(), "the answer")
-  });
+  
+    });
+    
+  
 
 });
 
