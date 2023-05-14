@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
 }
 
 
@@ -29,8 +28,8 @@ main {
 }
 
 .answers {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -50,16 +49,10 @@ main {
   line-height: 360px;
 }
 
-/* .large-font {
-font-size: 3.5em;
-  text-align:center;
-} */
-
 .timer {
-  
   background: #f0f0f0;
   color: #000000;
-  
+
 }
 
 .timer-text {
@@ -92,7 +85,7 @@ font-size: 3.5em;
   .reset-button {
     font-size: 12px;
     width: 20ox;
-    
+
   }
 
   .timer {
@@ -106,7 +99,7 @@ font-size: 3.5em;
   position: relative;
 }
 
-#firstPageParagraph{
+#firstPageParagraph {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,4 +107,156 @@ font-size: 3.5em;
 
 .start-button {
   flex-grow: 0;
+}
+
+.high-score-result {
+  background-color: #d9d3e9;
+  list-style-type: none;
+  display: flex;
+  font-size: 18px;
+}
+
+.highScoreResults {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.goBack-button {
+  background-color: #bd60e7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 16px
+}
+
+.goBack-button:hover {
+  cursor: pointer
+}
+
+.clearHighScores-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.clearHighScores-button:hover {
+  cursor: pointer
+}
+
+.start-button {
+  background-color: #351c75;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+
+#codingQuizChallenge {
+  font-size: 32px;
+}
+
+#viewHighScoresButton {
+  border: none;
+  color: #c169e9;
+}
+
+.question-1-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: flex;
+  width: 25%;
+  font-size: 16px;
+
+}
+
+.question-2-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: flex;
+  width: 35%;
+  font-size: 16px;
+
+}
+
+.question-3-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: flex;
+  width: 40%;
+  font-size: 16px;
+
+}
+
+.question-4-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: flex;
+  width: 30%;
+  font-size: 16px;
+}
+
+.question-5-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: flex;
+  width: 30%;
+  font-size: 16px;
+}
+
+.wrong {
+  color: #979797;
+  font-size: 18px;
+  border-top: 1px solid rgb(217, 217, 217);
+  padding: 6px;
+}
+
+.right {
+  color: #979797;
+  font-size: 18px;
+  border-top: 1px solid rgb(217, 217, 217);
+  padding: 6px;
+}
+
+.submit-button {
+  background-color: #351c75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+#initialsInput {
+  height: 30px;
+}
+
+.question {
+  width: 500px;
 }

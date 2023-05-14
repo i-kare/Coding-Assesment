@@ -114,7 +114,7 @@ $(function () {
     } // retrieve users list and add to it
 
     localStorage.setItem(user, count);
-
+    count = 0;
     showHighScorePage();
     $("#totalScorePage").hide();
     $("#highScorePage").show();
@@ -129,9 +129,9 @@ $(function () {
       usersArray = userList.split(",");
       for (let i = 0; i < usersArray.length; i++) {
         results.append(
-          `<li>${i + 1}. ${usersArray[i]} - ${localStorage.getItem(
+          `<li class="high-score-result">${i + 1}. ${
             usersArray[i]
-          )} </li>`
+          } - ${localStorage.getItem(usersArray[i])} </li>`
         );
       }
     }
@@ -141,6 +141,8 @@ $(function () {
     e.preventDefault();
     $("#firstPage").show();
     $("#highScorePage").hide();
+    $(".wrong").hide();
+    $(".right").hide();
   });
 
   $(".clearHighScores-button").click((e) => {
@@ -158,6 +160,7 @@ $(function () {
     $("#question-4").hide();
     $("#question-5").hide();
     $("#highScorePage").hide();
+    $("#totalScorePage").hide();
     showHighScorePage();
     $("#highScorePage").show();
   });
