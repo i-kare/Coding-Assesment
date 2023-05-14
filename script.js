@@ -102,11 +102,7 @@ $(function () {
 
   $(".submit-button").click((e) => {
     e.preventDefault();
-    $("#totalScorePage").hide();
-    $("#highScorePage").show();
-    showHighScorePage();
     let user = $("#initialsInput").val();
-
     // if users list is empty then add to it
     if (localStorage.getItem("users") === null) {
       localStorage.setItem("users", user);
@@ -119,12 +115,13 @@ $(function () {
 
     localStorage.setItem(user, count);
 
+    showHighScorePage();
+    $("#totalScorePage").hide();
+    $("#highScorePage").show();
     startButton.disabled = false;
   });
 
-  $("#viewHighScoresButton").click((e) => {});
-
-  function showHighScorePage() {
+  async function showHighScorePage() {
     let userList = localStorage.getItem("users");
     let results = $("#highScoreResults");
     results.empty();
@@ -148,26 +145,27 @@ $(function () {
 
   $(".clearHighScores-button").click((e) => {
     e.preventDefault();
-    $(".highScorePagePart2").show();
-    $("#highScorePage").hide();
-  });
-
-  $(".goBackPart2-button").click((e) => {
-    e.preventDefault();
-    $("#firstPage").show();
-    $("#highScorePagePart2").hide();
+    localStorage.clear();
+    showHighScorePage();
   });
 
   $(".viewHighScoresButton").click((e) => {
     e.preventDefault();
-    $("#highScorePagePart2").show();
     $("#firstPage").hide();
+    $("#question-1").hide();
+    $("#question-2").hide();
+    $("#question-3").hide();
+    $("#question-4").hide();
+    $("#question-5").hide();
+    $("#highScorePage").hide();
+    showHighScorePage();
+    $("#highScorePage").show();
   });
 
   // The startGame function is called when the start button is clicked
   function startGame() {
     isCompleted = false;
-    timerCount = 25;
+    timerCount = 75;
 
     // Prevents start button from being clicked when assessment is in progress
     startButton.disabled = true;
@@ -203,6 +201,7 @@ $(function () {
       }
       // Tests if time has run out. If timer has run out, the user is sent to the end of the game i.e the totalScorePage
       if (timerCount <= 0) {
+        showHighScorePage();
         $("#totalScorePage").show();
 
         timerElement.textContent = 0;
@@ -218,7 +217,6 @@ $(function () {
         $("#question-4").hide();
         $("#question-5").hide();
         $("#highScorePage").hide();
-        $("#highScorePagePart2").hide();
         endGame();
       }
     }, 1000);
