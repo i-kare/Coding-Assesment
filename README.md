@@ -16,9 +16,10 @@
 
 ## Deployed Page Url
 
-1. 
+1. https://i-kare.github.io/Coding-Assessment/
 
  
 ## Screenshot of App
 
-1. 
+1. ![04-web-apis-homework-demo](https://github.com/i-kare/Coding-Assessment/assets/119103898/55cfbb9b-54be-4320-8d33-8a37a19b7740)
+
