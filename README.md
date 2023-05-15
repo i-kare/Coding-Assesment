@@ -21,5 +21,6 @@
  
 ## Screenshot of App
 
-1. ![04-web-apis-homework-demo](https://github.com/i-kare/Coding-Assessment/assets/119103898/55cfbb9b-54be-4320-8d33-8a37a19b7740)
+1. <img width="1224" alt="coding quiz screen shot" src="https://github.com/i-kare/Coding-Assessment/assets/119103898/19e8ad77-4ae3-4434-b5c9-f2b2c6f5bf24">
+
 
