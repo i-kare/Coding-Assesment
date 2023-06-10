@@ -16,9 +16,11 @@
 
 ## Deployed Page Url
 
-1. 
+1. https://i-kare.github.io/Coding-Assessment/
 
  
 ## Screenshot of App
 
-1. 
+1. <img width="1224" alt="coding quiz screen shot" src="https://github.com/i-kare/Coding-Assessment/assets/119103898/19e8ad77-4ae3-4434-b5c9-f2b2c6f5bf24">
+
+
