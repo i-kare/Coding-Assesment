@@ -10,6 +10,7 @@
 
 <body>
   <header class="main-header">
+    <!-- The navigation bar with view high scores button and the timer -->
     <h1><button class="viewHighScoresButton" id="viewHighScoresButton">View high scores</button></h1>
     <h2>
       <section class="card timer">
@@ -21,6 +22,7 @@
 
   <main>
     <section class="firstPage" id="firstPage">
+      <!-- The first page with start button -->
       <h1 id="codingQuizChallenge">Coding Quiz Challenge</h1>
       <p id="firstPageParagraph">Try to answer the following code-related questions within the time limit. Keep in mind
         that incorrect answers will penalize your score/time by ten seconds.
@@ -28,6 +30,7 @@
       </p>
     </section>
 
+    <!-- The first quiz question -->
     <section class="question" id="question-1" style="display: none;">
       <h1 class="title">Commonly used data types DO Not Include:</h1>
       <li class="answers">
@@ -40,6 +43,7 @@
       <p class="right" style="display: none;">Correct!</p>
     </section>
 
+    <!-- The second quiz question -->
     <section class="question" id="question-2" style="display: none;">
       <h1 class="title">The condition in an if / else statement is enclosed with ________.</h1>
       <li class="answers">
@@ -52,7 +56,7 @@
       <p class="right" style="display: none;">Correct!</p>
     </section>
 
-
+    <!-- The third quiz question -->
     <section class="question" id="question-3" style="display: none;">
       <h1 class="title">Arrays in JavaScript can be used to store ________.</h1>
       <li class="answers">
@@ -64,6 +68,8 @@
       <p class="wrong" style="display: none;">Wrong!</p>
       <p class="right" style="display: none;">Correct!</p>
     </section>
+
+    <!-- The fourth quiz question -->
     <section class="question" id="question-4" style="display: none;">
       <h1 class="title">Strings values must be enclosed within ________ when being assigned to variables.</h1>
       <li class="answers">
@@ -75,6 +81,8 @@
       <p class="wrong" style="display: none;">Wrong!</p>
       <p class="right" style="display: none;">Correct!</p>
     </section>
+
+    <!-- The fifth quiz question -->
     <section class="question" id="question-5" style="display: none;">
       <h1 class="title">A very useful tool used during development and debugging for printing content to the debugger
         is:</h1>
@@ -88,6 +96,7 @@
       <p class="right" style="display: none;">Correct!</p>
     </section>
 
+    <!-- The total score page -->
     <section class="totalScorePage" id="totalScorePage" style="display:none;">
       <h1 id="allDone">All done!</h1>
       <h4 id="totalScore">Your final score is</h4>
@@ -99,6 +108,7 @@
       <p class="right" style="display: none;">Correct!</p>
     </section>
 
+    <!-- The high score page -->
     <section class="highScorePage" id="highScorePage" style="display:none;">
       <h1 id="highScore">High scores</h1>
       <ul class="highScoreResults" id="highScoreResults">

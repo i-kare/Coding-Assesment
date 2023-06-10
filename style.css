@@ -32,8 +32,6 @@ main {
   flex-direction: column;
 }
 
-
-
 .word-guess {
   width: 55vw;
   height: 400px;
@@ -43,7 +41,6 @@ main {
   width: 30vw;
   height: 400px;
 }
-
 
 .word-blanks {
   line-height: 360px;

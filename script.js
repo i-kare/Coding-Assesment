@@ -7,6 +7,7 @@ $(function () {
   var timer;
   var timerCount;
 
+  // Start button will show the first page and start the timer
   $(".start-button").click((e) => {
     e.preventDefault();
     $(".firstPage").hide();
@@ -14,6 +15,7 @@ $(function () {
     startGame(); // starts timer
   });
 
+  // This will hide the first page and show the second and calculate the correct score if they are right/wrong and deduct time if they are wrong
   $(".question-1-button").click((e) => {
     e.preventDefault();
 
@@ -31,6 +33,7 @@ $(function () {
     $("#question-2").show();
   });
 
+  // This will hide the second page and show the third and calculate the correct score if they are right/wrong and deduct time if they are wrong
   $(".question-2-button").click((e) => {
     e.preventDefault();
 
@@ -48,6 +51,7 @@ $(function () {
     $("#question-3").show();
   });
 
+  // This will hide the third page and show the fourth and calculate the correct score if they are right/wrong and deduct time if they are wrong
   $(".question-3-button").click((e) => {
     e.preventDefault();
 
@@ -65,6 +69,7 @@ $(function () {
     $("#question-4").show();
   });
 
+  // This will hide the fourth page and show the fifth and calculate the correct score if they are right/wrong and deduct time if they are wrong
   $(".question-4-button").click((e) => {
     e.preventDefault();
 
@@ -82,6 +87,7 @@ $(function () {
     $("#question-5").show();
   });
 
+  // This will hide the fifth page and show the total score page and calculate the correct score if they are right/wrong and deduct time if they are wrong
   $(".question-5-button").click((e) => {
     e.preventDefault();
 
@@ -100,6 +106,7 @@ $(function () {
     clearInterval(timer);
   });
 
+  // When we click submit, we will add the user and their score to localStorage, if a user has been added already then we will append the user to the localStorage list and then show the high score page
   $(".submit-button").click((e) => {
     e.preventDefault();
     let user = $("#initialsInput").val();
@@ -121,6 +128,7 @@ $(function () {
     startButton.disabled = false;
   });
 
+  // This function retrieves users from the localStorage and sets the results in #highScoreResults
   async function showHighScorePage() {
     let userList = localStorage.getItem("users");
     let results = $("#highScoreResults");
@@ -137,6 +145,7 @@ $(function () {
     }
   }
 
+  // Go back will show the first page and hide the current page
   $(".goBack-button").click((e) => {
     e.preventDefault();
     $("#firstPage").show();
@@ -145,12 +154,14 @@ $(function () {
     $(".right").hide();
   });
 
+  // When we clear high scores, we want to remove all previously kept scores in local storage
   $(".clearHighScores-button").click((e) => {
     e.preventDefault();
     localStorage.clear();
     showHighScorePage();
   });
 
+  // When we click view high scores, we want to hide every other page and only calculate the high score and show the corresponding page
   $(".viewHighScoresButton").click((e) => {
     e.preventDefault();
     $("#firstPage").hide();
